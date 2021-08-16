@@ -115,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ],
                     )),
                 Positioned(
-                  top: 120.0,
+                  top: 110.0,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -132,8 +132,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             Image.asset(
                               "assets/button.png",
-                              width: 200,
-                              height: 110.0,
+                              width: 190,
+                              height: 100.0,
                             ),
                             Text(
                               "play".tr(),
@@ -150,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Positioned(
-                  top: 200.0,
+                  top: 180.0,
                   child: Row(
                     children: [
                       GestureDetector(
@@ -166,8 +166,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             Image.asset(
                               "assets/button.png",
-                              width: 200,
-                              height: 110.0,
+                              width: 190,
+                              height: 100.0,
                             ),
                             Text(
                               "SETTINGS".tr(),
@@ -184,7 +184,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Positioned(
-                  top: 280.0,
+                  top: 270.0,
                   child: Row(
                     children: [
                       GestureDetector(
@@ -200,8 +200,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             Image.asset(
                               "assets/button.png",
-                              width: 200,
-                              height: 110.0,
+                              width: 190,
+                              height: 70.0,
                             ),
                             Text(
                               "CREATE BALL".tr(),

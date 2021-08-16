@@ -35,7 +35,7 @@ class _GamePlayScreenState extends State<GamePlayScreen> {
   bool gameOver;
 
   Timer _timer;
-  int _start = 60;
+  int _start = 120;
 
   void startTimer() {
     const oneSec = const Duration(seconds: 1);
@@ -162,7 +162,7 @@ class _GamePlayScreenState extends State<GamePlayScreen> {
                               //width: 150,
                             ),
                             Text(
-                              "00:$_start",
+                              "$_start",
                               style: TextStyle(
                                   fontStyle: FontStyle.italic,
                                   fontSize: 24.0,
@@ -221,7 +221,11 @@ class _GamePlayScreenState extends State<GamePlayScreen> {
                               child: Padding(
                                 padding: const EdgeInsets.all(25.0),
                                 child: Container(
-                                    color: Colors.red, child: item.image),
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFF5acc5a),
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    child: item.image),
                               ),
                             );
                           }).toList()),
@@ -316,7 +320,7 @@ class _GamePlayScreenState extends State<GamePlayScreen> {
                                       ? Colors.red.withOpacity(0.0)
                                       : Color(0xFF9B9E0C).withOpacity(0.0),
                                   child: Padding(
-                                    padding: const EdgeInsets.all(25.0),
+                                    padding: const EdgeInsets.all(20.0),
                                     child: item.image,
                                   ),
                                 ),

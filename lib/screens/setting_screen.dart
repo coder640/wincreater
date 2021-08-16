@@ -66,7 +66,13 @@ class _SettingScreenState extends State<SettingScreen> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Image.asset('assets/close.png'),
+                    child: Container(
+                        height: 30,
+                        width: 30,
+                        child: Image.asset(
+                          'assets/close.png',
+                          fit: BoxFit.cover,
+                        )),
                   ),
                 ),
                 Positioned(
